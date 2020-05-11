@@ -1,0 +1,38 @@
+body {
+    background-image: url(https://americapodcast.com.br/wp-content/uploads/2019/01/bg-2.jpg);
+    background-size: auto 100vh;
+    font-family: Verdana;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #E88D5A;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: #0B3140;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    color: #E88D5A;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+  }
