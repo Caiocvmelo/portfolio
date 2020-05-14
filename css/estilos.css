@@ -1,38 +1,90 @@
+/*soft reset do css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
 body {
-    background-image: url(https://americapodcast.com.br/wp-content/uploads/2019/01/bg-2.jpg);
-    background-size: auto 100vh;
-    font-family: Verdana;
-    height: 100vh;
+  background-image: url(https://americapodcast.com.br/wp-content/uploads/2019/01/bg-2.jpg);
+  background-size: auto 100vh;
+  font-family: Verdana;
+  font-size: 12px; 
+  height: 100vh;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar essses estilos */
+@media (min-width: 400px) {
+  body{
+    font-size: 14px;
   }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body{
+    font-size: 20px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: #E88D5A;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
   
-  .menu {
-    background-color: #E88D5A;
-  }
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
   
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+a {
+  color: #0B3140;
+  text-decoration: none;
+}
   
-  .menu li {
-    list-style: none;
-  }
+a:hover {
+  text-decoration: underline;
+}
   
-  a {
-    color: #0B3140;
-    text-decoration: none;
-  }
+.site-subtitle,
+.site-title{
+  color: #E88D5A;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+}
   
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title{
-    color: #E88D5A;
-    text-align: center;
-  }
-  
-  .site-subtitle{
-    font-style: italic;
-  }
+.site-subtitle{
+  font-style: italic;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 180px;
+}
